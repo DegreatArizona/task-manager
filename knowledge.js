@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3000/api";
+const API_URL = "https://task-manager-murex-six.vercel.app/api";
 fetchTasks();
 async function signup() {
     const name = document.getElementById('signupName').value;
