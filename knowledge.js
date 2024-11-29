@@ -1,4 +1,4 @@
-const API_URL = "https://task-manager-backend-eight-pi.vercel.app/?vercelToolbarCode=e76xtuhOpxH6SeMapi";
+const API_URL = "https://task-manager-backend-eight-pi.vercel.app/api";
 fetchTasks();
 async function signup() {
     const name = document.getElementById('signupName').value;
