@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="png" href="T.png">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="knowledge.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Signup/Login <i class="fa fa-sign-in" aria-hidden="true"></i></h2>
+        <div class="task-input">
+            <h3>Sign Up</h3>
+            <label for="signupName">Full Name:</label>
+            <input type="text" id="signupName" placeholder="Name">
+            <label for="signupEmail">Email Address:</label>
+            <input type="email" id="signupEmail" placeholder="Email">
+            <label for="signupPassword">Password:</label>
+            <input type="password" id="signupPassword" placeholder="Password">
+            <button onclick="signup()">Sign Up</button>
+        </div>
+        <div class="task-input">
+            <h3>Login</h3>
+            <label for="loginEmail">Email Address:</label>
+            <input type="email" id="loginEmail" placeholder="Email">
+            <label for="loginPassword">Password:</label>
+            <input type="password" id="loginPassword" placeholder="Password">
+            <button onclick="login()">Login</button>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Task Manager <i class="fa fa-tasks" aria-hidden="true"></i></h1>
+        <div class="task-input">
+            <label for="taskName">Task Name:</label>
+            <input type="text" id="taskName" placeholder="Task Name">
+            <label for="taskDescription">Task Description:</label>
+            <input type="text" id="taskDescription" placeholder="Task Description">
+            <label for="taskDueDate">Task Due Date:</label>
+            <input type="date" id="taskDueDate">
+            <label for="taskPriority">Task Priority:</label>
+            <select id="taskPriority">
+                <option value="High">High Priority</option>
+                <option value="Medium">Medium Priority</option>
+                <option value="Low">Low Priority</option>
+            </select>
+            <button onclick="addTask()">Add Task</button>
+        </div>
+        <ul id="taskList"></ul>
+    </div>
+    <script src="knowledge.js"></script>
+</body>
+</html>
+
